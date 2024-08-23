@@ -1,6 +1,6 @@
 body {
-    background:rgb(23, 23, 24);
-    color: rgb(249, 65, 4);
+    background:rgb(4, 4, 4);
+    color: rgb(249, 45, 4);
     padding: 10px;
     font-family: arial;
 }
@@ -61,7 +61,10 @@ main {
 h2, h3 {
     margin: 0px;
 }
-
+#divider {
+ width: 1000px;
+ length: 0px;
+}
 
 
 
