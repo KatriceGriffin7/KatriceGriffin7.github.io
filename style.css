@@ -8,7 +8,6 @@ body {
   max-width: 800px;
     margin: auto;
 }
-
 /* navigation menu */
 nav {
     background: red(221, 10, 35);
@@ -55,7 +54,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgb(241, 241, 2) ridge;
+    border: 4px rgb(241, 18, 2) ridge;
     padding: 8px;
 }
 h2, h3 {
@@ -63,7 +62,7 @@ h2, h3 {
 }
 #divider {
  width: 1000px;
- length: 0px;
+ length: 1000px;
 }
 
 
