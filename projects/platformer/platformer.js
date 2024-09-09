@@ -41,13 +41,16 @@ $(function () {
     createPlatform(50, 650, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(500, 650, 300, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(850, 600, 260, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(1100, 500, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(900, 400, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    // TODO 2
+    createPlatform(1100, 550, 260, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(800, 450, 260, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
+    createCollectable("database", 400, 600); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("database", 700, 600); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("database", 1300, 500); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
+    createCollectable("database", 850, 400); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
 
     // TODO 3
     // Create cannons
@@ -58,7 +61,7 @@ $(function () {
     createCannon("top", 700, 600); // cannon on left wall, 600px down, shooting once per second
     createCannon("top", 1800, 600); // cannon on left wall, 600px down, shooting once per second
     createCannon("top", 1250, 600); // cannon on left wall, 600px down, shooting once per second
-    
+    createCannon("top", 1000, 600); // cannon on left wall, 600px down, shooting once per second
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
     /////////////////////////////////////////////////
