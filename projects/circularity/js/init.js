@@ -26,12 +26,12 @@ var circles = []; // variable to store all circles in one Array
 
 
         // TODO 2 : Create a function that draws a circle 
-        
+    function drawCircle(){    
 circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
 physikz.addRandomVelocity(circle, canvas);
 view.addChild(circle);
 circles.push(circle);
-
+    }
         // TODO 3 / 7 : Call the drawCircle() function 
         drawCircle();
         drawCircle();
@@ -49,7 +49,13 @@ circles.push(circle);
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
+            physikz.updatePosition(circles[0])
+            physikz.updatePosition(circles[1])
+            physikz.updatePosition(circles[2])
+            physikz.updatePosition(circles[3])
+            physikz.updatePosition(circles[4])
+   
+}
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            
@@ -57,7 +63,7 @@ circles.push(circle);
             // TODO 9 : Iterate over the array
            
             
-        }
+        
     
         /* 
         This Function should check the position of a circle that is passed to the 
