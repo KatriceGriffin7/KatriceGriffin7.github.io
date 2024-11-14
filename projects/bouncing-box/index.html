@@ -7,13 +7,13 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		body {
-  background-image: url("https://upload.wikimedia.org/wikipedia/en/9/9f/Feeder_-_Black-Red_album_cover.webp");
+  
   
 }
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color:rgb(101, 1, 1);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -28,6 +28,9 @@
 		.board {
 			height: 100vh;
 			width: 215vh;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9adUP7GaDiOxcqCrTg8K75j7UHpk3gccGQA&amp;s);
+			background-size:100%;
+			background-repeat:no-repeat;
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -59,8 +62,9 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(newPositionX, newPositionY) {
 				box.css("left", newPositionX);
+				//box.css("top", newPositionY)
 				
 			}
 
@@ -74,9 +78,13 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
-			var positionX = 0;
-			var points = 0;
-			var speed=10;
+			var positionX = 0
+			var points = 0
+			var speed = 10
+			var positionY = 0
+			var speedY = 10
+			var BoardHeight = jQuery(window).height();
+			var randNum = Math.random() * 100;
 			
 
 			/* 
@@ -86,16 +94,24 @@
 			*/
 			function update() {
 				 /* Your Code to Increase positionX by 10 HERE */
-				 positionX = positionX+ speed;
-				 moveBoxTo(positionX);
+				 positionX = positionX + speed;
+				 positionY = positionY + speedY;
+				 moveBoxTo(positionX, positionY);
 				 if(positionX > boardWidth){
 					speed = -speed;
 				 }
-					if(positionX < 0){
+					
+				 if(positionX < 0){
 					speed = -speed;
 				 }
+				//  if (positionY > boardHeight){
+				// 	speedY = -speedY;
+				//  }
+				//  if (positionY < 0){
+				// 	speedY = -speedY;
+				//  }
 				 
-			}
+			};
 			
 			
 
